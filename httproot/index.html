@@ -1,6 +1,24 @@
 <html>
     <body>
-        <h1>Hello World</h1>
+        <h1>Conversion</h1>
+        <form method="get" action="/change">
+            <label for="amount">Amount</label>
+            <input type="number" name="amount" id="amount" value="100">
+
+            <label for="currencySelectStart">Currency</label>
+            <select name="currencyStart" id="currencySelectStart">
+                <option value="euro">Euro</option>
+                <option value="dollar">Dollar</option>
+            </select>
+
+            <label for="currencySelectEnd">To convert in</label>
+            <select name="currencyEnd" id="currencySelectEnd">
+                <option value="euro">Euro</option>
+                <option value="dollar">Dollar</option>
+            </select>
+
+            <input type="submit" value="Convert">
+        </form>
         <a href="test.html">lien</a>
     </body>
 </html>

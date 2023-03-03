@@ -16,7 +16,7 @@ app.get('/whattimeisit', function(request, response){
     currentHourObject.date = now.getDate().toString().padStart(2,'0');
     currentHourObject.month = (now.getMonth()+1).toString().padStart(2, '0');
     currentHourObject.year = now.getFullYear();
-    response.end(JSON.stringify(currentHourObject));  
+    response.send(JSON.stringify(currentHourObject));  
 });
 
 app.listen(8000, function(){
